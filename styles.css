@@ -1,0 +1,43 @@
+.work-text-container {
+	display: flex;
+    flex-direction: column;
+}
+
+.title-container {
+    position: relative;
+	display: flex;
+    flex-direction: column;
+	height: 56px;
+}
+
+.sub-title {
+	height: 30px;
+}
+
+.work-title {
+    position: relative;
+    background-color: white;
+	padding: 7px 14px;
+    border-radius: 4px;
+    width: 288px;
+    z-index: 2;
+    margin-top: 0px;
+    white-space: nowrap;
+}
+
+.uline-title {
+	position: relative;
+    background-color: white;
+	padding: 7px 14px;
+    border-radius: 4px;
+    width: 129px;
+    z-index: 2;
+    margin-top: 0px;
+}
+
+.work-shadow {
+    height: 10px;
+    position: absolute;
+    top: 45px;
+    z-index: 1;
+}
