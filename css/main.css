@@ -1,0 +1,494 @@
+body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+h2 {
+	font-size: 18px;
+  font-family: "Space Grotesk";
+	font-weight: 700;
+	font-style: normal;
+  line-height: 150%;
+}
+
+h3 {
+	font-size: 24px;
+  font-family: "Space Grotesk";
+	font-weight: 700;
+	font-style: normal;
+  line-height: 150%;
+}
+
+h4 {
+  font-size: 16px;
+  font-family: "Space Mono";
+  font-weight: normal;
+	font-style: normal;
+  line-height: 150%;
+}
+
+p {
+	font-size: 14px;
+  font-family: "Space Mono";
+}
+
+.white-text {
+	color: white;
+}
+
+.primary-button {
+  position: relative;
+	padding: 7px 14px;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-family: "Space Mono";
+  font-size: 14px;
+	font-weight: 700;
+	font-style: normal;
+  background-color: white;
+  z-index: 2;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+}
+
+.primary-button:hover {
+	background-color: #eee;
+}
+
+.button-container {
+	display: flex;
+  flex-direction: column;
+}
+
+.drop-shadow {
+  height: 6px;
+  position: absolute;
+  bottom: -4px;
+  z-index: 1;
+}
+
+.card-shadow {
+  position: relative;
+}
+
+.card-drop-shadow {
+  height: 9px;
+  position: absolute;
+  bottom: -4px;
+  z-index: 1;
+}
+
+.dark-button {
+  color: white;
+  width: 138px;
+	position: relative;
+	padding: 7px 14px;
+  border: 1px solid white;
+  border-radius: 4px;
+  font-family:  Space Mono;
+  font-size: 14px;
+	font-weight: 700;
+	font-style: normal;
+  background-color: black;
+  z-index: 2;
+  text-decoration: none;
+}
+
+.dark-button:hover {
+	background-color: #1a1a1a;
+}
+
+.dark-button-container {
+	position: relative;
+}
+
+.dark-button-shadow {
+  height: 6px;
+  position: absolute;
+  bottom: -4px;
+  z-index: 1;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+.header-image {
+  height: 30px;
+  width: 100%;
+}
+
+.hero {
+  display: flex;
+  height: 80vh;
+  align-items: center;
+}
+
+.hero-content {
+  display: flex;
+	width: 100%;
+  height: 320px;
+  gap: 60px;
+  justify-content: center;
+}
+
+.hero-card {
+	width: 450px;
+  border: 1px solid black;
+  border-radius: 6px;
+  padding: 0 14px;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 2;
+}
+
+.hello {
+	width: 22px;
+}
+
+.hero-text {
+	display: flex;
+  flex-direction: column;
+  gap: 61px;
+}
+
+.home-header-buttons {
+  position: relative;
+	display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  gap: 73px;
+}
+
+.LR {
+  display: inline-block;
+	width: 71px;
+}
+
+.GIT {
+  display: inline-block;
+	width: 102px;
+  white-space: nowrap;
+}
+
+.work {
+	display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  background-color: black;
+  gap: 60px;
+  padding: 80px;
+}
+
+.work-section {
+	display: flex;
+  gap: 36px;
+  width: 760px;
+  margin: auto;
+}
+
+.work-image {
+	width: 361px;
+}
+
+.work-text-container {
+	display: flex;
+  flex-direction: column;
+}
+
+.title-container {
+  position: relative;
+	display: flex;
+  flex-direction: column;
+	height: 56px;
+  width: fit-content;
+}
+
+.sub-title {
+	height: 30px;
+}
+
+.work-title {
+  position: relative;
+  background-color: white;
+	padding: 7px 14px;
+  border-radius: 4px;
+  z-index: 2;
+  margin-top: 0px;
+}
+
+.uline-title {
+	position: relative;
+  background-color: white;
+	padding: 7px 14px;
+  border-radius: 4px;
+  z-index: 2;
+  margin-top: 0px;
+}
+
+.work-shadow {
+  height: 6px;
+  position: absolute;
+  bottom: 2px;
+  z-index: 1;
+}
+
+.work-middle {
+	height: 127px;
+}
+
+.uline-shadow {
+  height: 6px;
+  position: absolute;
+  bottom: 2px;
+  z-index: 1;
+}
+
+.footer-bg {
+	background-color: black;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 30px;
+  gap: 50px;
+}
+
+.footer-section {
+	display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  align-content: center;
+  gap: 50px;
+}
+
+.card-btn-container {
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-card {
+  position: relative;
+	display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.card-text {
+  font-size: 16px;
+  position: relative;
+  background-color: white;
+  border-radius: 6px;
+  width: 483px;
+  z-index: 2;
+  margin: 0px;
+  padding: 16px;
+}
+
+.cat-image {
+	width: 80px;
+  margin: auto;
+  display: flex;
+}
+
+
+.thanks-text {
+  font-size: 16px;
+	font-family: "Space Mono";
+	font-weight: 400;
+	font-style: normal;
+  color: white;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.footer-shadow {
+  height: 9px;
+  position: absolute;
+  bottom: -4px;
+  z-index: 1;
+}
+
+/* CASE STUDY */
+
+.CS-hero-section {
+  position: relative;
+  margin: 0 auto;
+}
+
+.work-hero {
+  width: 100%;
+  margin-bottom: -60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.CS-card-shadow {
+  width: 480px;
+  margin: 0 auto;
+  position: relative;
+  margin: 0 auto;
+}
+
+.CS-hero-card {
+  width: 450px;
+  border: 1px solid black;
+  border-radius: 6px;
+  padding: 0 14px;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 2;
+}
+
+.CS-hero-card-drop {
+  width: 480px;
+  position: absolute;
+  bottom: -4px;
+  z-index: 1;
+  align-items: center;
+}
+
+.brief-title {
+  margin: 14px 0;
+}
+
+.brief-container {
+  width: 640px;
+  margin: 0 auto;
+  padding: 60px 0 100px 0;
+}
+
+.brief-text {
+  margin: 0;
+}
+
+.CS-section {
+  width: 100%;
+  background-color: white;
+  position: relative;
+}
+
+.CS-dark-section {
+  width: 100%;
+  background-color: black;
+  position: relative;
+}
+
+.title {
+  width: 130px;
+  position: relative;
+  margin: 0 auto;
+  top: -30px;
+}
+
+.title-container-R {
+  width: 106px;
+  position: relative;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 6px;
+  padding: 0 14px;
+  z-index: 2;
+}
+
+.title-container-W {
+  width: 128px;
+  position: relative;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 6px;
+  padding: 0 14px;
+  z-index: 2;
+}
+
+.title-text {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+.title-shadow {
+  height: 6px;
+  position: absolute;
+  bottom: -4px;
+  z-index: 1;
+}
+
+.research-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100vw;
+  padding-bottom: 60px;
+}
+
+.research {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  padding: 40px 60px;
+}
+
+.research-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.research-title {
+  color: white;
+  margin: 0;
+  padding-top: 14px;
+  font-size: 16px;
+}
+
+.research-bullets {
+  color: white;
+  margin: 0;
+}
+
+.research-text {
+  color: white;
+}
+
+.wireframe-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.wireframe-image {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.wireframe-copy {
+  display: flex;
+  flex-direction: row;
+}
+
+.WF-card {
+  width: 30%;
+  margin: 40px auto 60px auto;
+  max-width: 380px;
+}
+
+.WF-title {
+  margin: 14px;
+  font-size: 16px;
+}
+
+.WF-text {
+  margin: 14px;
+}
