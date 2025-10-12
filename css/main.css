@@ -1,12 +1,20 @@
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 90px;
+    scroll-padding-top: 60px;
 }
 
 body {
   width: 100%;
   margin: 0px;
   padding: 0px;
+}
+
+h1 {
+  font-size: 32px;
+  font-family: "Space Grotesk";
+	font-weight: 700;
+	font-style: normal;
+  line-height: 150%;
 }
 
 h2 {
@@ -47,6 +55,7 @@ a {
 }
 
 .primary-button {
+  color: inherit;
   position: relative;
 	padding: 7px 14px;
   border: 1px solid black;
@@ -58,7 +67,6 @@ a {
   background-color: white;
   z-index: 2;
   text-decoration: none;
-  color: inherit;
   text-align: center;
 }
 
@@ -67,26 +75,10 @@ a {
 }
 
 .button-container {
+  position: relative;
 	display: flex;
   flex-direction: column;
-}
-
-.drop-shadow {
-  height: 6px;
-  position: absolute;
-  bottom: -4px;
-  z-index: 1;
-}
-
-.card-shadow {
-  position: relative;
-}
-
-.card-drop-shadow {
-  height: 9px;
-  position: absolute;
-  bottom: -4px;
-  z-index: 1;
+  width: fit-content;
 }
 
 .dark-button {
@@ -113,7 +105,7 @@ a {
 	position: relative;
   display: flex;
   flex-direction: column;
-  width: 138px;
+  width: fit-content;
 }
 
 .dark-button-shadow {
@@ -135,14 +127,14 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    backdrop-filter: blur(10px);
     z-index: 1000;
     padding: 15px 20px;
 }
 
-.header-image {
-  height: 30px;
-  width: 100%;
+.nav-back {
+  position: absolute;
+  top: 11.5px;
+  left: 30px;
 }
 
 .nav-dropdown {
@@ -156,7 +148,7 @@ a {
     width: 100%;
     padding: 12px 40px 12px 16px;
     font-size: 16px;
-    border: 2px solid #ddd;
+    border: 1px solid #000000;
     border-radius: 8px;
     background: white;
     cursor: pointer;
@@ -168,7 +160,7 @@ a {
     width: 100%;
     padding: 12px 16px 12px 16px;
     font-size: 16px;
-    border: 2px solid #ddd;
+    border: 1px solid #000000;
     border-radius: 8px;
     background: white;
     cursor: pointer;
@@ -190,7 +182,7 @@ a {
 /* Custom dropdown arrow */
 .dropdown-arrow {
     transition: transform 0.3s ease;
-    color: #666;
+    color: #000000;
     font-size: 12px;
     width: 10px;
     height: 5px;
@@ -201,13 +193,14 @@ a {
 }
 
 /* Dropdown Menu */
+
 .dropdown-menu {
     position: absolute;
     top: 100%;
     left: 0;
     right: 0;
     background: white;
-    border: 2px solid #007bff;
+    border: 1px solid #000000;
     border-top: none;
     border-radius: 0 0 8px 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -230,9 +223,9 @@ a {
     transition: all 0.2s ease;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
     font-size: 15px;
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 1px solid #000000;
 }
 
 .dropdown-option:last-child {
@@ -254,11 +247,34 @@ a {
   font-family: "Space Mono";
 }
 
+.dropdown-backdrop {
+
+}
+
+.dropdown-backdrop.active {
+  display: block;
+}
+
+
 .section-border {
   border-bottom: 2px solid black;
 }
 
 /** Page-specific CSS **/
+
+.relative {
+  position: relative;
+}
+
+.hero-container {
+  display: block;
+}
+
+.hero-button {
+  position: absolute;
+  top: 60px;
+  left: 30px;
+}
 
 .hero {
   display: flex;
@@ -267,6 +283,7 @@ a {
 }
 
 .hero-content {
+  position: relative;
   display: flex;
 	width: 100%;
   height: 320px;
@@ -288,7 +305,7 @@ a {
 	width: 22px;
 }
 
-.hero-text {
+.hero-copy-buttons {
 	display: flex;
   flex-direction: column;
   gap: 61px;
@@ -300,6 +317,7 @@ a {
   flex-direction: row;
   margin: 0 auto;
   gap: 73px;
+  width: fit-content;
 }
 
 .LR {
@@ -340,11 +358,18 @@ a {
 }
 
 .title-container {
-  position: relative;
-	display: flex;
-  flex-direction: column;
-	height: 56px;
   width: fit-content;
+  position: relative;
+}
+
+.home-title-container {
+  width: fit-content;
+  position: relative;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 6px;
+  white-space: nowrap;
+  z-index: 2;
 }
 
 .sub-title {
@@ -507,6 +532,7 @@ a {
   margin: 0 auto;
   width: 640px;
   padding: 30px 0 100px 0;
+  text-align: center;
 }
 
 .CS-section {
@@ -542,15 +568,29 @@ a {
 .title-text {
   font-size: 20px;
   display: flex;
-  justify-content: center;
-  margin: 15px 0;
+  margin: 11px 0;
 }
 
-.title-shadow {
-  height: 6px;
+.drop-shadow {
+  background-image: url("../images/drop-shadow.webp");
   position: absolute;
   bottom: -4px;
   z-index: 1;
+  background-size: cover;
+  width: 100%;
+  height: 6px;
+  border-radius: 0 0 6px 6px;
+}
+
+.dark-drop-shadow {
+  background-image: url("../images/dark-drop-shadow.webp");
+  position: absolute;
+  bottom: -4px;
+  z-index: 1;
+  background-size: cover;
+  width: 100%;
+  height: 6px;
+  border-radius: 0 0 6px 6px;
 }
 
 .research-container {
@@ -559,14 +599,21 @@ a {
   justify-content: center;
   align-items: flex-start;
   width: 100vw;
-  padding-bottom: 60px;
+  padding: 30px 0 60px 0;
+  gap: 5vw;
 }
 
 .research {
   display: flex;
   flex-direction: column;
-  width: 400px;
+  width: 40vw;
   padding: 40px 60px;
+}
+
+.uline-research {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
 }
 
 .research-icon {
@@ -657,12 +704,28 @@ a {
   padding-bottom: 60px;
 }
 
+.wrapper-full {
+  width: 100vw;
+}
+
+.wrapper-half {
+  width: 40vw;
+}
+
 .slideshow {
   position: relative;
-  width: 800px;
-  height: 500px;
   overflow: hidden;
   border-radius: 6px;
+}
+
+.slideshow-full {
+  width: 80vw;
+  height: 500px;
+}
+
+.slideshow-half {
+  width: 30vw;
+  height: 300px;
 }
 
 .slideshow img {
@@ -674,7 +737,7 @@ a {
   object-fit: cover;
   opacity: 0;
   will-change: opacity; /* Optimize for opacity changes */
-  transition: opacity 0.5s ease-in-out; /* Add smooth transition */
+  transition: opacity 0.3s ease-in-out; /* Add smooth transition */
 }
 
 .slideshow img.active {

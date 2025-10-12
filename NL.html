@@ -11,15 +11,19 @@
       <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link rel="preload" as="image" href="images/DnD-Char.webp">
-      <link rel="preload" as="image" href="images/DnDCharSheet.webp">
+      <link rel="preload" as="image" href="images/NL-Homepage.webp">
+      <link rel="preload" as="image" href="images/NL-PDP.webp">
       <link rel="preload" as="image" href="images/Prev.png">
       <link rel="preload" as="image" href="images/Next.png">
    </head>
    <body>
      <!-- Sticky Navigation -->
-     <!-- Sticky Navigation -->
      <nav class="sticky-nav">
+       <div class="nav-back">
+         <div class="dark-button-container">
+            <div><a href="index.html" class="primary-button GIT">BACK TO HOME</a></div>
+         </div>
+       </div>
          <div class="nav-dropdown">
              <button class="dropdown-toggle" id="dropdownToggle">
                  <span class="dropdown-nav-text">NAVIGATION</span>
@@ -44,6 +48,7 @@
                  <div class="dropdown-option" data-target="#conclusion">
                      <span class="dropdown-option-text">CONCLUSION</span>
                  </div>
+                 <div id="dropdownBackdrop" class="dropdown-backdrop"></div>
              </div>
          </div>
      </nav>
@@ -55,7 +60,7 @@
               <h3 class="brief-title">New Life Leatherworks</h2>
               <p>My work building a website for an entrepreneur with a unique backstory.</p>
            </div>
-           <div><img class="CS-hero-card-drop" src="images/hero-card-drop.webp" alt=""></div>
+           <div class="drop-shadow"></div>
         </div>
       </div>
       <div class="brief-container section-border">
@@ -66,11 +71,11 @@
           <div class="CS-title-container">
              <div><h2 class="title-text">Wireframing</h2></div>
           </div>
-          <div><img class="title-shadow" src="images/wireframe-drop.png" alt=""></div>
+          <div class="drop-shadow"></div>
         </div>
         <div class="research-container">
           <div class="research">
-            <img class="research-icon" src="images/light-bulb.webp" alt="light bulb icon signifying insights">
+            <img class="research-icon" src="images/lightbulb-dark.webp" alt="light bulb icon signifying insights">
             <h3 class="research-title-light">DESIGN GOALS</h3>
             <p>Through discovery conversations with Michael, we decided on these goals for a successful website design:</p>
             <ul class="research-bullets-light">
@@ -87,7 +92,7 @@
           <div class="CS-title-container">
              <div><h2 class="title-text">Branding</h2></div>
           </div>
-          <div><img class="title-shadow" src="images/wireframe-drop.png" alt=""></div>
+          <div class="dark-drop-shadow"></div>
         </div>
         <div class="research-container">
           <img class="research" src="images/branding-image.webp" alt="Colors and Text styles for the website">
@@ -103,7 +108,7 @@
         <div class="CS-title-container">
            <div><h2 class="title-text">Photography</h2></div>
         </div>
-        <div><img class="title-shadow" src="images/wireframe-drop.png" alt=""></div>
+        <div class="drop-shadow"></div>
       </div>
       <div class="research-container">
         <div class="research">
@@ -120,18 +125,16 @@
           <div class="CS-title-container">
              <div><h2 class="title-text">Design</h2></div>
           </div>
-          <div><img class="title-shadow" src="images/D-drop.webp" alt=""></div>
+          <div class="drop-shadow"></div>
         </div>
-        <div class="slideshow-wrapper">
+        <div class="slideshow-wrapper wrapper-full">
           <button class="prev" type="button" aria-label="Previous Slide">
             <img src="images/Prev.png" alt="Previous Slide">
           </button>
-
-          <div class="slideshow" aria-live="polite">
-             <img src="images/NL-Homepage.webp" class="active" alt="Slide of New Life Homepage">
-             <img src="images/NL-PDP.webp" alt="Slide of New Life Product Detail Page">
+          <div class="slideshow slideshow-full" aria-live="polite">
+             <img src="images/NL-Homepage.webp" class="active" decoding="sync" fetchpriority="high" alt="Slide of New Life Homepage">
+             <img src="images/NL-PDP.webp" decoding="sync" fetchpriority="high" alt="Slide of New Life Product Detail Page">
           </div>
-
           <button class="next" type="button" aria-label="Next Slide">
             <img src="images/Next.png" alt="Next Slide">
           </button>
@@ -142,14 +145,14 @@
           <div class="CS-title-container">
              <div><h2 class="title-text">Conclusion</h2></div>
           </div>
-          <div><img class="title-shadow" src="images/NS-drop.png" alt=""></div>
+          <div class="drop-shadow"></div>
         </div>
         <div class="research-container">
           <div class="research">
             <img class="research-icon" src="images/handV.webp" alt="hand V sign signifying a job well done">
             <div class="text-paragraph">
               <p>In the end, I created a design that both Michael and I are happy with. I learned the power of sharing rough mockups with my stakeholder, and using them to align on decisions throughout a project.</p>
-              <p>New Life Leatherworks is live! <a href="https://www.newlifeleatherworks.com/">Click here</a> if you’re in the market for a new wallet or want to learn more about Michael’s journey.</p>
+              <p>New Life Leatherworks is live! <a href="https://www.newlifeleatherworks.com/" target="_blank">Click here</a> if you’re in the market for a new wallet or want to learn more about Michael’s journey.</p>
             </div>
           </div>
           <img class="final-image" src="images/NL-tile.webp" alt="Display of multiple New Life Desktop Screens">
@@ -167,11 +170,11 @@
                   <div>
                      <p class="card-text">I’m always open to learning about new opportunities. If you want to work together, discuss a project, or just want to connect, please reach out!</p>
                   </div>
-                  <div><img class="footer-shadow" src="images/footer-drop.webp" alt=""></div>
+                  <div class="dark-drop-shadow"></div>
                </div>
                <div class="dark-button-container">
                   <div><a href="" class="primary-button GIT">GET IN TOUCH</a></div>
-                  <div><img class="dark-button-shadow" src="images/footer-GIT-drop.webp" alt=""></div>
+                  <div class="dark-drop-shadow"></div>
                </div>
             </div>
             <div>

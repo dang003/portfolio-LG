@@ -92,20 +92,21 @@ document.addEventListener('DOMContentLoaded', updateActiveSection);
 
 //SLIDESHOW
 
-const slides = document.querySelectorAll(".slideshow img");
-let current = 0;
+document.addEventListener("DOMContentLoaded", () => {
+  const slides = document.querySelectorAll(".slideshow img");
+  let current = 0;
 
-function showSlide(index) {
-  slides[current].classList.remove("active");
-  current = (index + slides.length) % slides.length; // wrap around
-  slides[current].classList.add("active");
-}
+  function showSlide(index) {
+    slides[current].classList.remove("active");
+    current = (index + slides.length) % slides.length; // wrap around
+    slides[current].classList.add("active");
+  }
 
-// make sure to target buttons outside slideshow
-document.querySelector(".prev").addEventListener("click", () => {
-  showSlide(current - 1);
-});
+  document.querySelector(".prev").addEventListener("click", () => {
+    showSlide(current - 1);
+  });
 
-document.querySelector(".next").addEventListener("click", () => {
-  showSlide(current + 1);
+  document.querySelector(".next").addEventListener("click", () => {
+    showSlide(current + 1);
+  });
 });
