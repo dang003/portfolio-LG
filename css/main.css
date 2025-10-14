@@ -276,6 +276,7 @@ a {
   display: flex;
   height: 80vh;
   align-items: center;
+  justify-content: flex-start;
   padding: 0 20px;
 }
 
@@ -293,8 +294,14 @@ a {
   height: auto;
 }
 
+.hero-copy-buttons {
+  width: 450px;
+	display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .hero-card {
-	width: 450px;
   border: 1px solid black;
   border-radius: 6px;
   padding: 0 14px;
@@ -307,30 +314,13 @@ a {
 	width: 22px;
 }
 
-.hero-copy-buttons {
-	display: flex;
-  flex-direction: column;
-  gap: 61px;
-}
-
 .home-header-buttons {
   position: relative;
 	display: flex;
   flex-direction: row;
+  justify-content: space-between;
   margin: 0 auto;
-  gap: 73px;
-  width: fit-content;
-}
-
-.LR {
-  display: inline-block;
-	width: 71px;
-}
-
-.GIT {
-  display: inline-block;
-	width: 102px;
-  white-space: nowrap;
+  width: 100%;
 }
 
 .work {
@@ -340,13 +330,13 @@ a {
   justify-content: center;
   background-color: black;
   gap: 60px;
-  padding: 80px;
+  margin: 0 auto;
+  padding: 80px 0;
 }
 
 .work-section {
 	display: flex;
   gap: 36px;
-  width: 760px;
   margin: auto;
 }
 
@@ -357,6 +347,8 @@ a {
 .work-text-container {
 	display: flex;
   flex-direction: column;
+  width: 100%;
+  height: 100%;
 }
 
 .title-container {
@@ -404,7 +396,7 @@ a {
 }
 
 .work-middle {
-	height: 127px;
+  width: 340px;
 }
 
 .uline-shadow {
@@ -773,289 +765,33 @@ a {
   gap: 0;
 }
 
-/* ============================================
-   MOBILE RESPONSIVE STYLES
-   ============================================ */
+@media screen and (max-width: 760px) {
 
-/* Tablet and smaller */
-@media (max-width: 1024px) {
-  .hero-content {
-    flex-direction: column;
-    height: auto;
-    gap: 30px;
-    padding: 20px;
-  }
-
-  .hero-card {
-    width: 100%;
-    max-width: 500px;
-  }
-
-  .work {
-    padding: 40px 20px;
-  }
-
-  .work-section {
-    width: 100%;
-    max-width: 600px;
-  }
-
-  .research-container {
-    flex-direction: column;
-    padding: 30px 20px;
-  }
-
-  .research, .uline-research {
-    width: 100%;
-    padding: 20px;
-  }
-
-  .wireframe-copy {
-    flex-direction: column;
-  }
-
-  .WF-card {
-    width: 100%;
-    margin: 20px auto;
-  }
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 24px;
-  }
-
-  h2 {
-    font-size: 16px;
-  }
-
-  h3 {
-    font-size: 20px;
-  }
-
-  h4 {
-    font-size: 14px;
-  }
-
-  /* Navigation */
-  .sticky-nav {
-    padding: 10px 15px;
-    flex-wrap: wrap;
-  }
-
-  .nav-back {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    margin-bottom: 10px;
-  }
-
-  .nav-dropdown {
-    position: relative;
-    width: 100%;
-    top: 0;
-    right: 0;
-  }
-
-  /* Hero Section */
-  .hero {
-    height: auto;
-    min-height: 60vh;
-    padding: 80px 15px 40px;
-  }
-
-  .hero-content {
-    flex-direction: column;
-    gap: 20px;
-    height: auto;
-    align-items: center;
-  }
-
-  .hero-image {
-    width: 100%;
-    max-width: 300px;
-  }
-
-  .hero-card {
-    width: 100%;
-    max-width: none;
-    padding: 0 20px;
-  }
-
-  .hero-copy-buttons {
-    gap: 30px;
-    width: 100%;
-  }
-
-  .home-header-buttons {
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-  }
-
-  .LR, .GIT {
-    width: auto;
-    min-width: 150px;
-  }
-
-  /* Work Section */
-  .work {
-    padding: 40px 15px;
-    gap: 40px;
+  .hero-content img {
+    display: none;
   }
 
   .work-section {
     flex-direction: column;
-    width: 100%;
-    gap: 20px;
+    gap: 10px;
   }
 
   .work-image {
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
+    width: 80vw;
   }
 
   .work-middle {
-    height: auto;
+    width: 80vw;
   }
 
-  /* Footer */
-  .footer-bg {
-    padding: 40px 15px 20px;
-  }
-
-  .card-text {
-    width: 100%;
-    max-width: none;
-    font-size: 14px;
-  }
-
-  /* Case Study */
-  .CS-card-shadow, .CS-hero-card {
-    width: 90%;
-    max-width: 450px;
-  }
-
-  .brief-text {
-    width: 90%;
-    padding: 20px 0 60px;
-  }
-
-  .research {
-    padding: 20px 15px;
-  }
-
-  .wireframe-image {
-    width: 90%;
-  }
-
-  .WF-card {
-    margin: 20px 0;
-  }
-
-  /* Slideshow */
-  .slideshow-wrapper {
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px 0;
-  }
-
-  .slideshow-full {
-    width: 90vw;
-    height: 300px;
-  }
-
-  .slideshow-half {
-    width: 90vw;
-    height: 250px;
-  }
-
-  .prev, .next {
-    order: 2;
-  }
-
-  .slideshow {
-    order: 1;
-  }
-
-  .prev img, .next img {
-    width: 40px;
-    height: 40px;
-  }
-
-  .final-image {
-    width: 90%;
-    max-width: 400px;
-  }
-
-  .back-container {
-    height: 90px;
-  }
-}
-
-/* Small Mobile */
-@media (max-width: 480px) {
-  h1 {
-    font-size: 20px;
-  }
-
-  h3 {
-    font-size: 18px;
-  }
-
-  .primary-button, .dark-button {
-    font-size: 12px;
-    padding: 6px 12px;
-  }
-
-  .dropdown-toggle {
-    padding: 10px 12px;
-    font-size: 14px;
-  }
-
-  .dropdown-option {
-    padding: 12px;
-  }
-
-  .hero {
-    padding: 70px 10px 30px;
-  }
-
-  .hero-card {
-    padding: 0 15px;
-  }
-
-  .work {
-    padding: 30px 10px;
-    gap: 30px;
-  }
-
-  .footer-bg {
-    padding: 30px 10px 20px;
+  .work-button {
+    width: 80vw;
+    margin-top: 10px;
   }
 
   .card-text {
-    font-size: 13px;
-    padding: 12px;
+    width: 80vw;
+    max-width: 483px;
   }
 
-  .slideshow-full {
-    height: 250px;
-  }
-
-  .slideshow-half {
-    height: 200px;
-  }
-
-  .CS-card-shadow, .CS-hero-card {
-    width: 95%;
-  }
-
-  .brief-text {
-    width: 95%;
-    font-size: 14px;
-  }
 }
