@@ -123,6 +123,7 @@ a {
     top: 0;
     left: 0;
     right: 0;
+    width: 100%;
     background: url("../images/header-bg.png") repeat center center;
     background-size: auto;
     display: flex;
@@ -478,13 +479,6 @@ a {
   align-items: center;
 }
 
-.CS-card-shadow {
-  width: 480px;
-  margin: 0 auto;
-  position: relative;
-  margin: 0 auto;
-}
-
 .CS-hero-card {
   width: 450px;
   border: 1px solid black;
@@ -546,6 +540,12 @@ a {
   padding: 0 14px;
   white-space: nowrap;
   z-index: 2;
+}
+
+.CS-card-shadow {
+  width: fit-content;
+  position: relative;
+  margin: 0 auto;
 }
 
 .home-title-container {
@@ -774,6 +774,19 @@ a {
 
 @media screen and (max-width: 760px) {
 
+  html {
+      scroll-padding-top: 90px;
+  }
+
+
+  body {
+    width: 100vw;
+  }
+
+  .nav-dropdown {
+    right: 50px;
+  }
+
   .hero-copy-buttons {
     width: 80vw;
     max-width: 450px;
@@ -819,6 +832,77 @@ a {
   .card-text {
     width: 80vw;
     max-width: 483px;
+  }
+
+  .CS-hero-card {
+    width: 80vw;
+    margin: 0 auto;
+  }
+
+  .brief-text {
+    width: 80vw;
+    padding: 20px 0 70px 0;
+  }
+
+  .research-container {
+    flex-direction: column;
+    width: 100vw;
+    padding: 0;
+  }
+
+  .research {
+    width: 80vw;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .wireframe-image {
+    width: 100%;
+  }
+
+  .wireframe-copy {
+    flex-direction: column;
+    padding-bottom: 30px;
+    padding-top: 20px;
+  }
+
+  .WF-card {
+    width: 80vw;
+    margin: 0;
+  }
+
+  .prev, .next {
+    display: none;
+  }
+
+  .slideshow-full {
+    width: 100%;
+  }
+
+  .slideshow-wrapper {
+    padding-bottom: 0;
+  }
+
+  .final-image {
+    width: 100%;
+  }
+
+  .upside {
+    flex-direction: column-reverse;
+  }
+
+  .bottom-pad {
+    padding-bottom: 60px;
+  }
+
+  .bottom-pad-half {
+    padding-bottom: 30px;
+  }
+
+  .uline-research {
+    width: 80vw;
+    padding: 0;
+    margin: 0 auto;
   }
 
 }
