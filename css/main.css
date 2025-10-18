@@ -604,6 +604,7 @@ a {
   width: 100vw;
   max-width: 1000px;
   padding: 30px 0 60px 0;
+  gap: 30px;
   margin: 0 auto;
 }
 
@@ -612,6 +613,18 @@ a {
   flex-direction: column;
   width: 40vw;
   padding: 40px 60px;
+}
+
+.research-image-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100vw;
+  max-width: 1000px;
+  gap: 60px;
+  padding-bottom: 60px;
+  margin: 0 auto;
 }
 
 .uline-research {
@@ -719,7 +732,7 @@ a {
 
 .slideshow-full {
   width: 80vw;
-  height: 500px;
+  height: 300px;
 }
 
 .slideshow-half {
@@ -755,7 +768,13 @@ a {
 }
 
 .final-image {
-  width: 30vw;
+  width: 35vw;
+  margin: auto 0;
+}
+
+.uline-image {
+  width: 35vw;
+  margin: auto 0;
 }
 
 .back-container {
@@ -844,7 +863,7 @@ a {
   }
 
   .CS-hero-card {
-    width: 80vw;
+    width: 70vw;
     margin: 0 auto;
   }
 
@@ -857,6 +876,13 @@ a {
     flex-direction: column;
     width: 100vw;
     padding: 0;
+  }
+
+  .research-image-container {
+    flex-direction: column;
+    width: 100vw;
+    padding: 0;
+    gap: 0;
   }
 
   .research {
@@ -894,6 +920,11 @@ a {
 
   .final-image {
     width: 100%;
+  }
+
+  .uline-image {
+    width: 80vw;
+    margin: 0 auto;
   }
 
   .upside {
