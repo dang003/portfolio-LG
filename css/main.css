@@ -257,6 +257,10 @@ a {
   border-bottom: 2px solid black;
 }
 
+.second-paragraph {
+  margin-top: 0;
+}
+
 /** Page-specific CSS **/
 
 .relative {
@@ -619,7 +623,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   width: 100vw;
   max-width: 1000px;
   gap: 60px;
@@ -630,6 +634,7 @@ a {
 .uline-research {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 40vw;
 }
 
@@ -732,12 +737,12 @@ a {
 
 .slideshow-full {
   width: 80vw;
-  height: 300px;
+  height: 580px;
 }
 
 .slideshow-half {
   width: 30vw;
-  height: 300px;
+  height: 290px;
 }
 
 .slideshow img {
