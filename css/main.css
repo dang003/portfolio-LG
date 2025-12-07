@@ -45,6 +45,7 @@ h4 {
 p {
 	font-size: 14px;
   font-family: "Space Mono";
+  line-height: 150%;
 }
 
 a {
@@ -383,6 +384,11 @@ a {
   width: fit-content;
 }
 
+.work-card-text {
+  margin-top: 0px;
+  margin-bottom: 28px;
+}
+
 .work-shadow {
   height: 6px;
   position: absolute;
@@ -523,19 +529,21 @@ a {
   position: relative;
   display: flex;
   flex-direction: column;
+  padding: 30px;
 }
 
 .CS-dark-section {
   width: 100%;
   background-color: black;
   position: relative;
+  padding: 30px;
 }
 
 .title {
   width: fit-content;
   position: relative;
   margin: 0 auto;
-  top: -30px;
+  top: -60px;
 }
 
 .CS-title-container {
@@ -600,42 +608,54 @@ a {
   border-radius: 0 0 6px 6px;
 }
 
-.research-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  width: 100vw;
-  max-width: 1000px;
-  padding: 30px 0 60px 0;
-  gap: 30px;
-  margin: 0 auto;
-}
-
-.research {
-  display: flex;
-  flex-direction: column;
-  width: 40vw;
-  padding: 40px 60px;
-}
-
-.research-image-container {
+.text-image-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100vw;
-  max-width: 1000px;
+  max-width: 1080px;
+  padding: 0 0 60px 0;
   gap: 60px;
-  padding-bottom: 60px;
   margin: 0 auto;
 }
 
-.uline-research {
+.text-text-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100vw;
+  max-width: 1080px;
+  padding: 0 0 60px 0;
+  gap: 60px;
+  margin: 0 auto;
+}
+
+.text-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   width: 40vw;
+  max-width: 510px;
+}
+
+.text-full-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1080px;
+}
+
+.text-only-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1080px;
+}
+
+.half-image {
+  width: 40vw;
+  max-width: 510px;
 }
 
 .research-icon {
@@ -680,8 +700,8 @@ a {
 }
 
 .wireframe-image {
-  width: 60%;
   margin: 0 auto;
+  max-width: 800px;
 }
 
 .wireframe-copy {
@@ -690,9 +710,9 @@ a {
 }
 
 .WF-card {
-  width: 30%;
+  width: 33%;
   margin: 40px auto 60px auto;
-  max-width: 380px;
+  max-width: 360px;
 }
 
 .WF-title {
@@ -702,6 +722,12 @@ a {
 
 .WF-text {
   margin: 14px;
+}
+
+.vertical-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .Design-section {
@@ -800,6 +826,22 @@ a {
   gap: 0;
 }
 
+.no-style {
+  text-decoration: none;
+}
+
+.half-bot-padding {
+  padding-bottom: 30px;
+}
+
+.no-bot-padding {
+  padding-bottom: 0px;
+}
+
+.no-bot-margin {
+  margin-bottom: 0;
+}
+
 @media screen and (max-width: 760px) {
 
   html {
@@ -877,7 +919,13 @@ a {
     padding: 20px 0 70px 0;
   }
 
-  .research-container {
+  .text-image-container {
+    flex-direction: column;
+    width: 100vw;
+    padding: 0;
+  }
+
+  .text-text-container {
     flex-direction: column;
     width: 100vw;
     padding: 0;
@@ -890,9 +938,8 @@ a {
     gap: 0;
   }
 
-  .research {
+  .text-container {
     width: 80vw;
-    padding: 0;
     margin: 0 auto;
   }
 
@@ -949,5 +996,11 @@ a {
     padding-bottom: 28px;
     margin: 0 auto;
   }
+
+  .work-card-text {
+    margin-top: 0px;
+    margin-bottom: 14px;
+  }
+
 
 }

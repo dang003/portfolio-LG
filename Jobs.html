@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Portfolio | Building a Design System</title>
+      <!-- Link to external CSS -->
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="preload" as="image" href="images/NL-Homepage.webp">
+      <link rel="preload" as="image" href="images/NL-PDP.webp">
+      <link rel="preload" as="image" href="images/Prev.png">
+      <link rel="preload" as="image" href="images/Next.png">
+      <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+      <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+      <link rel="shortcut icon" href="favicon/favicon.ico" />
+      <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+      <link rel="manifest" href="favicon/site.webmanifest" />
+   </head>
+   <body>
+     <!-- Sticky Navigation -->
+     <nav class="sticky-nav">
+       <div class="nav-back">
+         <div class="dark-button-container">
+            <div><a href="index.html" class="primary-button">BACK TO HOME</a></div>
+         </div>
+       </div>
+         <div class="nav-dropdown">
+             <button class="dropdown-toggle" id="dropdownToggle">
+                 <span class="dropdown-nav-text">NAVIGATION</span>
+                 <img src="images/DD-arrow.svg" class="dropdown-arrow" alt="">
+             </button>
+             <div class="dropdown-menu" id="dropdownMenu">
+                 <div class="dropdown-option" data-target="#summary">
+                     <span class="dropdown-option-text">SUMMARY</span>
+                 </div>
+                 <div class="dropdown-option" data-target="#disco">
+                     <span class="dropdown-option-text">DISCOVERY</span>
+                 </div>
+                 <div class="dropdown-option" data-target="#content">
+                     <span class="dropdown-option-text">CONTENT STRATEGY</span>
+                 </div>
+                 <div class="dropdown-option" data-target="#design">
+                     <span class="dropdown-option-text">DESIGN</span>
+                 </div>
+                 <div class="dropdown-option" data-target="#impact">
+                     <span class="dropdown-option-text">IMPACT</span>
+                 </div>
+                 <div class="dropdown-option" data-target="#conclusion">
+                     <span class="dropdown-option-text">CONCLUSION</span>
+                 </div>
+                 <div id="dropdownBackdrop" class="dropdown-backdrop"></div>
+             </div>
+         </div>
+     </nav>
+      <!-- Case Study Content -->
+      <div id="summary" class="CS-hero-section">
+        <img class="work-hero" src="images/NL-header.webp" alt="Image of Adventurer Assistant Screens">
+        <div class="CS-card-shadow">
+           <div class="CS-hero-card">
+              <h3 class="brief-title">Careers Site Redesign</h2>
+              <p>Designing to support major hiring growth and improving the applicant experience.</p>
+           </div>
+           <div class="drop-shadow"></div>
+        </div>
+      </div>
+      <div class="brief-container section-border">
+        <h4 class="brief-text">This case study outlines how I balanced the demands of a growing business with user-centered design. As the only UX designer on the project, I collaborated closely with research, product management, HR, and development to create a smoother, more intuitive applicant journey from start to finish.</h4>
+      </div>
+      <div id="disco" class="CS-section section-border">
+        <div class="title">
+          <div class="CS-title-container">
+             <div><h2 class="title-text">Discovery</h2></div>
+          </div>
+          <div class="drop-shadow"></div>
+        </div>
+        <div class="text-text-container bot-padding">
+          <div class="text-container">
+            <img class="research-icon" src="images/bud.webp" alt="">
+            <h3 class="research-title-light">THE PROBLEM</h3>
+            <p>The existing site had several critical issues:</p>
+            <ul class="research-bullets-light">
+              <li><p>Poor mobile experience</p></li>
+              <li><p>Important information hidden behind carousels and modals</p></li>
+              <li><p>Accessibility issues and outdated look.</p></li>
+            </ul>
+          </div>
+          <div class="text-container">
+            <img class="research-icon" src="images/lightbulb-dark.webp" alt="">
+            <h3 class="research-title-light">GOALS</h3>
+            <ul class="research-bullets-light">
+              <li><p><strong>Increase applications</strong> by improving clarity and flow.</p></li>
+              <li><p><strong>Design mobile-first</strong> based on real user behavior.</p></li>
+              <li><p><strong>Improve SEO</strong> through cleaner structure and readable content.</p></li>
+              <li><p><strong>Modernize visuals</strong> and align with brand direction.</p></li>
+              <li><p><strong>Build reusable components</strong> for future scalability.</p></li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-image-container">
+          <img class="half-image" src="images/dnd_WF.webp" alt="Image of Adventurer Assistant Screens">
+          <div class="text-container">
+            <h3 class="research-title-light">USER RESEARCH</h3>
+            <p>I collaborated closely with our UX researcher, who ran discovery interviews and synthesized insights. The key findings include:</p>
+            <ul class="research-bullets-light">
+              <li><p>Most applicants use mobile at some point in their journey, confirming a mobile-first design is essential.</p></li>
+              <li><p>Applicants felt lost, unable to find relevant information.</p></li>
+              <li><p>The site’s layout felt inauthentic and corporate, not useful to the applicant.</p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="content" class="CS-section section-border">
+        <div class="title">
+          <div class="CS-title-container">
+             <div><h2 class="title-text">Content Strategy</h2></div>
+          </div>
+          <div class="drop-shadow"></div>
+        </div>
+        <div class="text-text-container">
+          <div class="text-container">
+            <img class="research-icon" src="images/bud.webp" alt="">
+            <h3 class="research-title-light">CONTENT OWNERSHIP</h3>
+            <p>HR owned all copy and imagery, which created cross-departmental decision-making challenges. I navigated content disagreements by:</p>
+            <ul class="research-bullets-light">
+              <li><p>Using research and analytics to back up decisions.</p></li>
+              <li><p>Relying on UX heuristics and accessibility standards as objective guardrails.</p></li>
+              <li><p>Presenting multiple layout options, enabling HR to decide while maintaining good UX.</p></li>
+            </ul>
+          </div>
+          <div class="text-container">
+            <img class="research-icon" src="images/bud.webp" alt="">
+            <h3 class="research-title-light">KEY IMPROVEMENTS</h3>
+            <ul class="research-bullets-light">
+              <li><p>Rebuilding the global navigation to group pages more intuitively.</p></li>
+              <li><p>Eliminated hidden content (carousels, modals) and made critical information readily available.</p></li>
+              <li><p>Designed vertical layouts optimized for mobile reading.</p></li>
+              <li><p>Standardized templates so HR had a consistent framework for future projects.</p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="design" class="CS-section bottom-pad section-border">
+        <div class="title">
+          <div class="CS-title-container">
+             <div><h2 class="title-text">Design</h2></div>
+          </div>
+          <div class="drop-shadow"></div>
+        </div>
+        <div class="text-image-container">
+          <div class="text-container">
+            <h3 class="research-title-light">THE PROCESS</h3>
+            <p>I created mobile-first wireframes, shared them with HR for content updates, then refined the final UI for consistency and polish.</p>
+            <p>Because our dev resources were limited, I designed solutions that were both impactful and feasible, implementing updates page-by-page.</p>
+          </div>
+          <!-- MOBILE WIREFRAME HERE -->
+          <img class="half-image" src="images/branding-image.webp" alt="Colors and Text styles for the website">
+        </div>
+        <div class="text-image-container bottom-pad">
+          <!-- OLD DESKTOP WIREFRAME -->
+          <img class="half-image" src="images/branding-image.webp" alt="Colors and Text styles for the website">
+          <div class="text-container">
+            <h3 class="research-title-light">A TURNING POINT</h3>
+            <p>At one stage, I realized I was mostly designing to avoid upsetting stakeholders. The result was functional, but I received feedback that the design didn't encourage them to scroll down the page. So I decided to push for a more dynamic visual approach while still respecting content priorities.</p>
+            <p>The reaction was immediate: one stakeholder responded with a genuine “WOW!” This became the direction we moved forward with, helping align teams around a more engaging, applicant-friendly experience</p>
+          </div>
+        </div>
+
+        <!-- FINAL DESIGN SLIDESHOW HERE??? -->
+
+      </div>
+      <div id="impact" class="CS-section section-border">
+        <div class="title">
+          <div class="CS-title-container">
+             <div><h2 class="title-text">Impact</h2></div>
+          </div>
+          <div class="drop-shadow"></div>
+        </div>
+        <div class="text-image-container bottom-pad">
+          <!-- 3 UPDATED MOBILE DESIGNS?? -->
+          <img class="half-image" src="images/branding-image.webp" alt="Colors and Text styles for the website">
+          <div class="text-container">
+            <h3 class="research-title-light">OUTCOMES</h3>
+            <p>The updated designs were met with strong internal support and immediate positive feedback from recruiters and HR. While full analytics will come post-launch, early outcomes include:</p>
+            <ul class="research-bullets-light">
+              <li><p>Clearer content hierarchy across 20+ pages.</p></li>
+              <li><p>A significantly more usable mobile experience.</p></li>
+              <li><p>A modern, consistent visual system that supports brand alignment.</p></li>
+              <li><p>A base component library to scale future web work.</p></li>
+            </ul>
+            <p>I’m most proud of the cohesive look and feel I established, and the beginnings of a design system that will keep the site consistent and scalable long-term.</p>
+          </div>
+        </div>
+      </div>
+      <div id="conclusion" class="CS-section">
+        <div class="title">
+          <div class="CS-title-container">
+             <div><h2 class="title-text">Conclusion</h2></div>
+          </div>
+          <div class="drop-shadow"></div>
+        </div>
+        <div class="text-image-container">
+          <div class="text-container">
+            <img class="research-icon" src="images/handV.webp" alt="">
+            <h3 class="research-title-light">WHAT I LEARNED</h3>
+            <div class="text-paragraph">
+              <p>This project was a complex, multi-department effort that required diplomacy, structure, and thoughtful design leadership. It taught me how to navigate large organizations, advocate for users with evidence, and create solutions that balance vision with real-world constraints.</p>
+              <p>The final result is a careers site designed for clarity, exploration, and real applicant needs. It will serve as a foundation that can support Uline’s hiring strategy for years to come.</p>
+            </div>
+          </div>
+          <img class="final-image" src="images/Jobs-final.webp" alt="Display of updated uline.jobs Warehouse Page">
+        </div>
+      </div>
+      <div class="back-container">
+        <div class="dark-button-container back-button">
+           <a href="index.html" class="dark-button">BACK TO HOME</a>
+        </div>
+      </div>
+      <div class="footer-bg">
+         <div class="footer-section">
+            <div class="card-btn-container">
+               <div class="footer-card">
+                  <div>
+                     <p class="card-text">I’m always open to learning about new opportunities. If you want to work together, discuss a project, or just want to connect, please reach out!</p>
+                  </div>
+                  <div class="dark-drop-shadow"></div>
+               </div>
+               <div class="dark-button-container">
+                 <a href="mailto:gallagherd07@gmail.com?subject=Portfolio%20Inquiry" class="primary-button">GET IN TOUCH</a>
+                  <div class="dark-drop-shadow"></div>
+               </div>
+            </div>
+            <div>
+               <div><img alt="ASCII art cat" class="cat-image" src="images/catimage.webp"></div>
+               <div>
+                  <h3 class="thanks-text">THANKS FOR VISITING!</h3>
+               </div>
+            </div>
+         </div>
+      </div>
+    <script src="script.js"></script>
+   </body>
+</html>

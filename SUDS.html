@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Portfolio | Building a Design System</title>
+      <!-- Link to external CSS -->
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="preload" as="image" href="images/NL-Homepage.webp">
+      <link rel="preload" as="image" href="images/NL-PDP.webp">
+      <link rel="preload" as="image" href="images/Prev.png">
+      <link rel="preload" as="image" href="images/Next.png">
+      <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+      <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+      <link rel="shortcut icon" href="favicon/favicon.ico" />
+      <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+      <link rel="manifest" href="favicon/site.webmanifest" />
+   </head>
+   <body>
+     <!-- Sticky Navigation -->
+     <nav class="sticky-nav">
+       <div class="nav-back">
+         <div class="dark-button-container">
+            <div><a href="index.html" class="primary-button">BACK TO HOME</a></div>
+         </div>
+       </div>
+         <div class="nav-dropdown">
+             <button class="dropdown-toggle" id="dropdownToggle">
+                 <span class="dropdown-nav-text">NAVIGATION</span>
+                 <img src="images/DD-arrow.svg" class="dropdown-arrow" alt="">
+             </button>
+             <div class="dropdown-menu" id="dropdownMenu">
+                 <div class="dropdown-option" data-target="#summary">
+                     <span class="dropdown-option-text">SUMMARY</span>
+                 </div>
+                 <div class="dropdown-option" data-target="#prep">
+                     <span class="dropdown-option-text">PREPARATION</span>
+                 </div>
+                 <div class="dropdown-option" data-target="#creation">
+                     <span class="dropdown-option-text">CREATION</span>
+                 </div>
+                 <div class="dropdown-option" data-target="#challenges">
+                     <span class="dropdown-option-text">CHALLENGES</span>
+                 </div>
+                 <div class="dropdown-option" data-target="#impact">
+                     <span class="dropdown-option-text">IMPACT</span>
+                 </div>
+                 <div class="dropdown-option" data-target="#conclusion">
+                     <span class="dropdown-option-text">CONCLUSION</span>
+                 </div>
+                 <div id="dropdownBackdrop" class="dropdown-backdrop"></div>
+             </div>
+         </div>
+     </nav>
+      <!-- Case Study Content -->
+      <div id="summary" class="CS-hero-section">
+        <img class="work-hero" src="images/NL-header.webp" alt="Image of Adventurer Assistant Screens">
+        <div class="CS-card-shadow">
+           <div class="CS-hero-card">
+              <h3 class="brief-title">Building a Design System</h2>
+              <p>How I led the effort creating a design system from scratch.</p>
+           </div>
+           <div class="drop-shadow"></div>
+        </div>
+      </div>
+      <div class="brief-container section-border">
+        <h4 class="brief-text">This case study outlines how I built the system from the ground up by conducting audits, defining tokens, designing core components, collaborating with cross-functional teams, and driving adoption.</h4>
+      </div>
+      <div id="prep" class="CS-section section-border">
+        <div class="title">
+          <div class="CS-title-container">
+             <div><h2 class="title-text">Preparation</h2></div>
+          </div>
+          <div class="drop-shadow"></div>
+        </div>
+        <div class="text-text-container bot-padding">
+          <div class="text-container">
+            <img class="research-icon" src="images/bud.webp" alt="">
+            <h3 class="research-title-light">THE PROBLEM</h3>
+            <p>The company’s internal sales tool had grown over time without a design system or shared UI guidelines. As a result:</p>
+            <ul class="research-bullets-light">
+              <li><p>Core components like buttons, inputs, and modals did not match across the product.</p></li>
+              <li><p>Designers and developers wasted time reinventing components.</p></li>
+              <li><p>Modernization was a priority, but we lacked a scalable foundation.</p></li>
+            </ul>
+          </div>
+          <div class="text-container">
+            <img class="research-icon" src="images/lightbulb-dark.webp" alt="">
+            <h3 class="research-title-light">GOALS</h3>
+            <ul class="research-bullets-light">
+              <li><p><strong>Standardize the UI</strong> across the sales tool.</p></li>
+              <li><p><strong>Improve accessibility</strong> with WCAG-compliant color and component guidelines.</p></li>
+              <li><p><strong>Modernize</strong> the visual look and interaction patterns.</p></li>
+              <li><p><strong>Provide a future-state vision</strong> for a more cohesive, scalable product experience.</p></li>
+              <li><p><strong>Increase design and development efficiency</strong>, especially during handoff.</p></li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-image-container">
+          <img class="half-image" src="images/dnd_WF.webp" alt="Image of Adventurer Assistant Screens">
+          <div class="vertical-copy">
+            <div>
+              <h3 class="WF-title">AUDIT</h3>
+              <p class="WF-text">My team began by reviewing 50+ screens, modals, and flows in the existing product. This helped identify inconsistencies across the app.</p>
+            </div>
+            <div>
+              <h3 class="WF-title">EVANGELIZING</h3>
+              <p class="WF-text">I presented the audit to key decision makers across the company, showing the necessity to build a design system.</p>
+            </div>
+            <div>
+              <h3 class="WF-title">PRIORITIZATION</h3>
+              <p class="WF-text">I used the audit to find commonly used elements with the most inconsistencies and started there.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="creation" class="CS-section section-border">
+        <div class="title">
+          <div class="CS-title-container">
+             <div><h2 class="title-text">Creation</h2></div>
+          </div>
+          <div class="drop-shadow"></div>
+        </div>
+        <div class="text-image-container">
+          <img class="half-image" src="images/branding-image.webp" alt="Colors and Text styles for the website">
+          <div class="text-container">
+            <h3 class="research-title-light">COMPONENTS</h3>
+            <p>Using atomic design principles, I designed each component with clarity, modularity, and accessibility in mind. I started with:</p>
+            <ul class="research-bullets-light">
+              <li><p>Buttons (Primary, Secondary, Tertiary, and Destructive).</p></li>
+              <li><p>Modals (3 versions to account for different use cases).</p></li>
+              <li><p>Inputs (Text fields, Checkboxes, Radio Buttons and Errors).</p></li>
+            </ul>
+            <p>Each component included documentation covering usage, states, content guidelines, and edge cases.</p>
+          </div>
+        </div>
+        <div class="text-image-container bottom-pad">
+          <div class="text-container">
+            <h3 class="research-title-light">DOCUMENTATION</h3>
+            <p>I created a structured Figma library so designers and developers could reuse components efficiently. Documentation pages included:</p>
+            <ul class="research-bullets-light">
+              <li><p>When and how to use each component.</p></li>
+              <li><p>Behavior and interaction patterns.</p></li>
+              <li><p>Accessibility requirements.</p></li>
+            </ul>
+            <p>Each component included documentation covering usage, states, content guidelines, edge cases, accessibility notes, and developer expectations.</p>
+          </div>
+          <img class="half-image" src="images/branding-image.webp" alt="Colors and Text styles for the website">
+        </div>
+      </div>
+      <div id="challenges" class="CS-dark-section bottom-pad">
+        <div class="title">
+          <div class="CS-title-container">
+             <div><h2 class="title-text">Challenges</h2></div>
+          </div>
+          <div class="dark-drop-shadow"></div>
+        </div>
+        <div class="text-text-container">
+          <div class="text-container">
+            <img class="research-icon" src="images/handshake.webp" alt="">
+            <h3 class="research-title">STAKEHOLDER BUY-IN</h3>
+            <p class="white-text">Leaders across the company prioritize finishing projects as a metric for success. Spending time building internal documentation was considered inefficient and unnecessary.</p>
+            <h3 class="research-title">SOLUTION</h3>
+            <ul class="research-bullets">
+              <li><p>I demonstrated the current state issues of the app and convinced leaders this would prevent inconsistencies in the future.</p></li>
+              <li><p>I adopted a new process, creating future state design components while completing projects. This allowed me to continue meeting company metrics while slowing building out the system.</p></li>
+            </ul>
+          </div>
+          <div class="text-container">
+            <img class="research-icon" src="images/code.webp" alt="">
+            <h3 class="research-title">LEGACY CODE</h3>
+            <p class="white-text">Much of the product’s front end relied on dated UI patterns. Full-scale adoption wasn’t immediately possible.</p>
+            <h3 class="research-title">SOLUTION</h3>
+            <ul class="research-bullets">
+              <li><p>I met with developers to understand their process and identify how the system could be implemented.</p></li>
+              <li><p>They worked project-by-project as well, slowly developing future state elements and allowing me to add the code to my documentation.</p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="impact" class="CS-section section-border">
+        <div class="title">
+          <div class="CS-title-container">
+             <div><h2 class="title-text">Impact</h2></div>
+          </div>
+          <div class="drop-shadow"></div>
+        </div>
+        <div class="text-text-container half-bot-padding">
+          <div class="text-full-container">
+            <h4 class="brief-text no-bot-padding">Due to the design system, measurable improvements emerged.</h4>
+          </div>
+        </div>
+        <div class="wireframe-section">
+          <div class="wireframe-copy">
+            <div class="WF-card no-bot-margin">
+              <h3 class="WF-title">ACCESSIBILITY</h3>
+              <p class="WF-text">Eliminated accessibility issues based on WCAG-compliant color compliance and guidelines.</p>
+            </div>
+            <div class="WF-card no-bot-margin">
+              <h3 class="WF-title">CONSISTENCY</h3>
+              <p class="WF-text">Future designs will be built using a consistent structure and reusable components.</p>
+            </div>
+            <div class="WF-card no-bot-margin">
+              <h3 class="WF-title">DEV HANDOFF</h3>
+              <p class="WF-text">Clearer documentation and reusable components have made handoffs smoother.</p>
+            </div>
+          </div>
+          <div class="wireframe-copy">
+            <div class="WF-card">
+              <h3 class="WF-title">ADOPTION</h3>
+              <p class="WF-text">We're looking into applying this system to different applications and across different teams.</p>
+            </div>
+            <div class="WF-card">
+              <h3 class="WF-title">DESIGN</h3>
+              <p class="WF-text">The design process has become more efficient by using common components and tokens across multiple projects.</p>
+            </div>
+            <div class="WF-card">
+              <h3 class="WF-title">ALIGNMENT</h3>
+              <p class="WF-text">Cross-functional can use this as a common language, improving communication.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="conclusion" class="CS-section">
+        <div class="title">
+          <div class="CS-title-container">
+             <div><h2 class="title-text">Conclusion</h2></div>
+          </div>
+          <div class="drop-shadow"></div>
+        </div>
+        <div class="text-image-container">
+          <div class="text-container">
+            <img class="research-icon" src="images/handV.webp" alt="">
+            <h3 class="research-title-light">WHAT I LEARNED</h3>
+            <div class="text-paragraph">
+              <p>Creating a design system taught me how to think systematically, creating components that solve immediate problems and scale to support future use cases. Working through atomic design principles and collaborating closely with developers showed me how good systems get built and adopted.</p>
+              <p>Now that teams are actually using it, I'm focused on building out more advanced components and putting some governance in place so the system can grow without falling apart. The foundation is solid, and the next step is making sure it scales thoughtfully and becomes a cental part of how we build.</p>
+            </div>
+          </div>
+          <img class="final-image" src="images/NL-tile.webp" alt="Display of multiple New Life Desktop Screens">
+        </div>
+      </div>
+      <div class="back-container">
+        <div class="dark-button-container back-button">
+           <a href="index.html" class="dark-button">BACK TO HOME</a>
+        </div>
+      </div>
+      <div class="footer-bg">
+         <div class="footer-section">
+            <div class="card-btn-container">
+               <div class="footer-card">
+                  <div>
+                     <p class="card-text">I’m always open to learning about new opportunities. If you want to work together, discuss a project, or just want to connect, please reach out!</p>
+                  </div>
+                  <div class="dark-drop-shadow"></div>
+               </div>
+               <div class="dark-button-container">
+                 <a href="mailto:gallagherd07@gmail.com?subject=Portfolio%20Inquiry" class="primary-button">GET IN TOUCH</a>
+                  <div class="dark-drop-shadow"></div>
+               </div>
+            </div>
+            <div>
+               <div><img alt="ASCII art cat" class="cat-image" src="images/catimage.webp"></div>
+               <div>
+                  <h3 class="thanks-text">THANKS FOR VISITING!</h3>
+               </div>
+            </div>
+         </div>
+      </div>
+    <script src="script.js"></script>
+   </body>
+</html>
