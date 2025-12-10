@@ -61,7 +61,7 @@ a {
   position: relative;
 	padding: 7px 14px;
   border: 1px solid black;
-  border-radius: 4px;
+  border-radius: 6px;
   font-family: "Space Mono";
   font-size: 14px;
 	font-weight: 700;
@@ -88,7 +88,7 @@ a {
 	position: relative;
 	padding: 7px 14px;
   border: 1px solid white;
-  border-radius: 4px;
+  border-radius: 6px;
   font-family: "Space Mono";
   font-size: 14px;
 	font-weight: 700;
@@ -125,6 +125,7 @@ a {
     left: 0;
     right: 0;
     width: 100%;
+    height: 10px;
     background: url("../images/header-bg.png") repeat center center;
     background-size: auto;
     display: flex;
@@ -136,14 +137,30 @@ a {
 
 .nav-back {
   position: absolute;
-  top: 19px;
+  top: 28px;
   left: 30px;
+}
+
+.back-button {
+  color: inherit;
+  position: relative;
+	padding: 12px 16px;
+  border: 1px solid black;
+  border-radius: 6px;
+  font-family: "Space Mono";
+  font-size: 14px;
+	font-weight: 700;
+	font-style: normal;
+  background-color: white;
+  z-index: 2;
+  text-decoration: none;
+  text-align: center;
 }
 
 .nav-dropdown {
   position: absolute;
-  width: 190px;
-  top: 7px;
+  width: 200px;
+  top: 16px;
   right: 70px;
 }
 
@@ -152,7 +169,7 @@ a {
     padding: 12px 40px 12px 16px;
     font-size: 16px;
     border: 1px solid #000000;
-    border-radius: 8px;
+    border-radius: 6px;
     background: white;
     cursor: pointer;
     appearance: none;
@@ -164,7 +181,7 @@ a {
     padding: 12px 16px 12px 16px;
     font-size: 16px;
     border: 1px solid #000000;
-    border-radius: 8px;
+    border-radius: 6px;
     background: white;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -201,7 +218,7 @@ a {
     background: white;
     border: 1px solid #000000;
     border-top: none;
-    border-radius: 0 0 8px 8px;
+    border-radius: 0 0 6px 6px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     opacity: 0;
     visibility: hidden;
@@ -239,6 +256,7 @@ a {
   font-size: 14px;
   font-family: "Space Mono";
   margin: 0;
+  visibility: visible;
 }
 
 .dropdown-option-text {
@@ -378,7 +396,7 @@ a {
   position: relative;
   background-color: white;
 	padding: 7px 14px;
-  border-radius: 4px;
+  border-radius: 6px;
   z-index: 2;
   margin: 0px;
   width: fit-content;
@@ -707,6 +725,7 @@ a {
 .wireframe-copy {
   display: flex;
   flex-direction: row;
+  width: 80vw;
 }
 
 .WF-card {
@@ -728,6 +747,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 40vw;
 }
 
 .Design-section {
@@ -826,6 +846,14 @@ a {
   gap: 0;
 }
 
+.desktop {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
 .no-style {
   text-decoration: none;
 }
@@ -852,12 +880,20 @@ a {
     width: 100vw;
   }
 
-  .nav-dropdown {
-    display: none;
+  .sticky-nav {
+    width: 100%;
+    height: 20px;
   }
 
-  .nav-back {
-    display: none;
+  .back-button {
+    top: 21px;
+    font-size: 14px;
+    font-family: "Space Mono";
+    font-weight: 400;
+  }
+
+  .nav-dropdown {
+    top: 27px;
   }
 
   .hero-copy-buttons {
@@ -909,6 +945,18 @@ a {
     padding: 5vw;
   }
 
+  .work-hero {
+    min-height: 300px;
+  }
+
+  .mobile-bot-padding {
+    padding-bottom: 60px;
+  }
+
+  .mobile-half-bot-padding {
+    padding-bottom: 30px;
+  }
+
   .CS-hero-card {
     width: 70vw;
     margin: 0 auto;
@@ -923,6 +971,7 @@ a {
     flex-direction: column;
     width: 100vw;
     padding: 0;
+    gap: 30px;
   }
 
   .text-text-container {
@@ -943,6 +992,15 @@ a {
     margin: 0 auto;
   }
 
+  .half-image {
+    width: 100vw;
+    max-width: none;
+  }
+
+  .vertical-copy {
+    width: 80vw;
+  }
+
   .wireframe-image {
     width: 100%;
   }
@@ -956,6 +1014,14 @@ a {
   .WF-card {
     width: 80vw;
     margin: 0;
+  }
+
+  .WF-title {
+    margin: 15px 0;
+  }
+
+  .WF-text {
+    margin: 15px 0;
   }
 
   .prev, .next {
@@ -1000,6 +1066,35 @@ a {
   .work-card-text {
     margin-top: 0px;
     margin-bottom: 14px;
+  }
+
+  .flex-switch {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .no-bot-padding {
+    padding-bottom: 0;
+  }
+
+  .no-top-padding {
+    padding-top: 0;
+  }
+
+  .mobile-no-bot-padding {
+    padding-bottom: 0;
+  }
+
+  .mobile-no-top-padding {
+    padding-top: 0;
   }
 
 
